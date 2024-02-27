@@ -1,12 +1,13 @@
+import React from 'react'
+import Login from './Components/Login';
+import Body from './Components/Body';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="text-3xl font-bold font-sans">
-        Hello Harsha
-      </header>
+    <div>
+      <Body/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

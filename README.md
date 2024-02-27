@@ -3,6 +3,11 @@
 
 1. create react App
 2. configure tailwind
+3. Header
+4. Login Form
+5. singup form
+
+
 # Features
 - Login/signup
     - singin/signUp 

@@ -5,18 +5,18 @@
 2. configure tailwind
 # Features
 - Login/signup
-    -singin/signUp 
-    -redirect to browse page
+    - singin/signUp 
+    - redirect to browse page
 
 - Browse (after authentication)
-    -Header
-    -Trailer -bg
-    -Title and desc
-    -playbutton
-    -movie suggestions
-        -Movies with features
+    - Header
+    - Trailer -bg
+    - Title and desc
+    - playbutton
+    - movie suggestions
+        - Movies with features
 
 - Netflix Gpt
-    -search bar
-    -Movie recommondations
+    - search bar
+    - Movie recommondations
 

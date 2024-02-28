@@ -1,12 +1,31 @@
 # Netflix-Gpt
  Chat Gpt powered movie recomondation in netflix.
 
+# steps perfomed
 1. create react App
 2. configure tailwind
 3. Header
 4. Login Form
 5. singup form
+6. Form Validation
+7. useRef hook
+8. Firebase Auth 
+    - Created a firebase for project
+    - installed in npm
+    - Select Authentication methods
+    - firebase login from vscode
+    - init
+    - Hosting- configure files manually and deploy not from github
+    - make folder as a src folder named it as "build" for hosting 
+    - before deploy run "npm build" to build as optimised minified project for hosting.
+    - It  creates a optimised build product
+    - firebase deploy for deploy the app
+    - successfully deployed.
+9. Create user account in firebase by signup/signIn code and connects to browse page.
+10. Created Redux store.
+    - userslice created.
 
+ 
 
 # Features
 - Login/signup

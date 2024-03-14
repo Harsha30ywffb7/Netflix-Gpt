@@ -24,6 +24,13 @@
 9. Create user account in firebase by signup/signIn code and connects to browse page.
 10. Created Redux store.
     - userslice created.
+    - Userslice dispatchers for username on screen for after login and logout.
+    - after login navigate to the browse page.
+11. UseNavigate Hook
+    - used to navigate over pages.
+    - Signout from Browse to home.
+12. Display name and profile when user login and vanish after logout. for that use "Manage users-> update profile APi after signIn".
+13. 
 
  
 

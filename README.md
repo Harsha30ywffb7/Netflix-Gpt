@@ -8,7 +8,7 @@
 4. Login Form
 5. singup form
 6. Form Validation
-7. useRef hook
+7. validation by using useRef hook
 8. Firebase Auth 
     - Created a firebase for project
     - installed in npm
@@ -29,8 +29,7 @@
 11. UseNavigate Hook
     - used to navigate over pages.
     - Signout from Browse to home.
-12. Display name and profile when user login and vanish after logout. for that use "Manage users-> update profile APi after signIn".
-13. 
+12. Display name and profile when user login and vanish after logout. for that use "Manage users-> update profile APi after signIn". Finally login, signup and authentication is working fine.
 
  
 

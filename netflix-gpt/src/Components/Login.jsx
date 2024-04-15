@@ -2,15 +2,14 @@ import React, { useState, useRef } from 'react'
 import Header from './Header.jsx';
 import { checkValidData } from '../utils/validate.js';
 import { auth } from '../utils/firebase.js';
-import { useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice.js';
+import { BG_URL, USER_AVATAR } from './constants.js';
 const Login = () => {
 
   const [isSignIn, setIsSignIn] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const navigate = useNavigate()
   const dispatcher = useDispatch()
 
   const name = useRef(null)
@@ -31,20 +30,17 @@ const Login = () => {
           const user = userCredential.user;
           console.log(user)
           //update user profile by api when login
-
-
           updateProfile(user, {
-            displayName: name.current.value, photoURL: "https://lh3.googleusercontent.com/ogw/AF2bZyhVdWA8v05hSq-g2PyIxaoQBpAiYkSoz9Yib3nx5veulgI=s32-c-mo"
+            displayName: name.current.value, photoURL: USER_AVATAR
           }).then(() => {
             // add updated details of profile and displayname to redux store.
             const { uid, displayName, profile, photoURL } = auth.currentUser;
             dispatcher(addUser(
               { uid: uid, displayName: displayName, profile: profile, photoURL: photoURL }))
-            navigate('/browse')
+            
           }).catch((error) => {
             setErrorMessage(error.message)
           });
-
           console.log(user);
 
         })
@@ -59,7 +55,7 @@ const Login = () => {
           // Signed in 
           const user = userCredential.user;
           console.log(user)
-          navigate('/browse')
+         
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -74,7 +70,7 @@ const Login = () => {
     <div className=''>
       <Header />
       <div className='absolute' >
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/2e07bc25-8b8f-4531-8e1f-7e5e33938793/e4b3c14a-684b-4fc4-b14f-2b486a4e9f4e/IN-en-20240219-popsignuptwoweeks-perspective_alpha_website_large.jpg" alt="Logo" />
+        <img src= {BG_URL} alt="Logo" />
 
       </div>
       <form

@@ -30,6 +30,9 @@
     - used to navigate over pages.
     - Signout from Browse to home.
 12. Display name and profile when user login and vanish after logout. for that use "Manage users-> update profile APi after signIn". Finally login, signup and authentication is working fine.
+13. Restricted the uncontrolled navigations. (If logins , can't navigate to login page from browse by url)
+14. Unsubscribe onauthstatechanged eventlistener.
+15. HardCoded values store in constant.js
 
  
 

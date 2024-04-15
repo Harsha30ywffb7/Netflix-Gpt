@@ -33,6 +33,16 @@
 13. Restricted the uncontrolled navigations. (If logins , can't navigate to login page from browse by url)
 14. Unsubscribe onauthstatechanged eventlistener.
 15. HardCoded values store in constant.js
+16. Login to tmdb.
+17. Created API key in tmdb. go to documentation and extract script of API fetch with options.
+18. TMDB integration
+19. Redux store created, movie slice created .
+20. Fetch data of movies.
+21. Custom hooks created for nowPlayingvideo and trailerVideo.
+22. Embedded youtube video and make it more better using tailwindcss
+23. Maincontainer with some live video is created.
+
+* Why react renders two times App? due to the strictMode using
 
  
 

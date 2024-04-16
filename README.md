@@ -41,6 +41,13 @@
 21. Custom hooks created for nowPlayingvideo and trailerVideo.
 22. Embedded youtube video and make it more better using tailwindcss
 23. Maincontainer with some live video is created.
+24. Movies with different categories are addded to list.
+25. By different Hooks created for diff genres
+26. GPT search feature is creating in header.
+27. An redux store created for Gpt toggleview to open search bar.
+28. Language constants created for different languages .
+29. A language can be selected by dropdown and adds to redux for storing languages.
+30. Based on selected language all words should change.
 
 * Why react renders two times App? due to the strictMode using
 
